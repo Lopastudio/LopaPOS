@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>ProductGen - LopaPOS</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./pgencss.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" href="#">Product Generator - LopaPOS</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="../">POS</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container mt-5">
+         <h1 class="mb-5">Product Generator For LopaPOS System</h1>
+         <div class="card mb-5">
+            <div class="card-body">
+               <form>
+                  <div class="form-group">
+                     <label for="item-name">Name:</label>
+                     <input type="text" class="form-control" id="item-name" placeholder="Enter item name">
+                  </div>
+                  <div class="form-group">
+                     <label for="item-price">Price:</label>
+                     <input type="text" class="form-control" id="item-price" placeholder="Enter item price">
+                  </div>
+                  <button type="button" class="btn btn-primary" onclick="addItem()">Add Item</button>
+               </form>
+            </div>
+         </div>
+         <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+               <tr>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Action</th>
+               </tr>
+            </thead>
+            <tbody id="items-table">
+            </tbody>
+         </table>
+        <button type="button" class="btn btn-primary" onclick="saveItems()">Save Items</button>
+         <div class="card mb-5">
+            <div class="card-body">
+               <div class="form-group">
+                  <label for="json-output">Generated JSON:</label>
+                  <textarea class="form-control" id="json-output" rows="10" readonly>[]</textarea>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="pgenscript.js"></script>
+   </body>
+</html>
