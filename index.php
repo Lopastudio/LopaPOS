@@ -7,8 +7,8 @@
   <title>LopaPOS</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="./login.css" rel="stylesheet">
-  <style>
-  </style>
+
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 
 <body class="bg-gray-900 text-white p-8">
