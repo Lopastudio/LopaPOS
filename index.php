@@ -20,6 +20,15 @@
         //Show if user logged in
         ?>
         <h1 class="text-4xl mb-5">LopaPOS System</h1>
+
+        <form action="logout.php" method="post">
+          <input type="submit" value="Logout" class="bg-red-500 text-white px-4 py-2 rounded-md">
+          <br></br>
+        </form>
+
+
+
+
         <label for="search">Search:</label>
         <input type="text" id="search" name="search" placeholder="Search products..."
                class="w-full px-4 py-2 rounded-lg border border-gray-800 focus:outline-none focus:border-blue-500 text-black">
@@ -78,11 +87,11 @@
           </div>
         </div>
         <br></br>
-        <h4 class="mb-5">(C) Lopastudio 2023</h4>
+        <footer class="text-center">
+          <h4 class="mb-4">Made with ❤️ by <a href="https://lopastudio.sk"><u>Patrik Nagy</u></a></h4>
+          <h4>(C) Lopastudio 2023 - 2024</h4>
+        </footer>
 
-        <form action="logout.php" method="post">
-          <input type="submit" value="Logout">
-        </form>
 
         <?php
     } else {

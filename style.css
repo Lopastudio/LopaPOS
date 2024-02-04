@@ -65,7 +65,12 @@ button:hover {
   background-color: #0069d9;
 }
 
-/* Specific styles for the POS System */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline;
+}
 
 #payment {
   margin-top: 20px;
